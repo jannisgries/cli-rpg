@@ -556,17 +556,17 @@ def check_win():
 # Introduction
 print(f"\n{horizontal_line}")
 print((
-    "####       #         #     ####    \n"
-    "#   #      #         #     #   #   \n"
-    "#    #     #         #     #    #  \n"   
-    "#     #    #         #     #     # \n"
-    "#     #    #         #     #     # \n"
-    "#    #     #         #     #    #  \n"  
-    "#   #       #       #      #   #   \n"
-    "####         ######        ####    "
+    "####         ###       ####   \n"
+    "#   #       #   #      #   #  \n"
+    "#    #     #     #     #    #   \n"   
+    "#     #   #       #    #     #    \n"
+    "#     #   #       #    #     #    \n"
+    "#    #    # # # # #    #    #  \n"  
+    "#   #     #       #    #   #   \n"
+    "####      #       #    ####   "
 ))
 print(f"{horizontal_line}")
-print("\nWelcome to a new Dungeons and Dreagons game.\nLet´s discuss some rules at the beginning. At any time, you can type 'exit' to quit the game, 'save' to save your current progress, 'items' to see your current items, 'map' to see a map of the game or 'help to view this message again.")
+print("\nWelcome to a new Dungeons and Dreagons game.\nLet´s discuss some rules at the beginning. At any time, you can type 'exit' to quit the game, 'save' to save your current progress, 'items' to see your current items, 'map' to see a map of the game or 'help' to view this message again.")
 print(f"{horizontal_line}")
 # Load current game or initiallize a new game
 player_name, player_state, player_returns, player_items, player_dead_enemies = open_game()
@@ -703,7 +703,7 @@ while True:
                         "  / \\     \n"
                         "  \\ /     \n"
                         )
-                    berry_item = {"name": "suspicoius berry", "type":"death_item", "score": 0, "string_image": berry_image}
+                    berry_item = {"name": "suspicious berry", "type":"death_item", "score": 0, "string_image": berry_image}
                     room_items = [
                         torch_item,
                         berry_item
